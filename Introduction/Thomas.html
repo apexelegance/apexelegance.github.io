@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <title>Thomas</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
 </head>
-<body>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
 
 <!-- Navbar -->
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="https://apexelegance.github.io/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="https://apexelegance.github.io/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
   <a href="https://apexelegance.github.io/#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
   <a href="https://apexelegance.github.io/#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-  <a href="https://apexelegance.github.io/#sponsor" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sponsor</a>
+  <a href="https://apexelegance.github.io/#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
   <a href="https://apexelegance.github.io/#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
     <div class="w3-dropdown-hover w3-hide-small">
     <button class="w3-button" title="Notifications">More <i class="fa fa-caret-down"></i></button>     
@@ -37,32 +44,33 @@ body {font-family: "Lato", sans-serif}
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="https://apexelegance.github.io/#team" class="w3-bar-item w3-button">Team</a>
-    <a href="https://apexelegance.github.io/#work" class="w3-bar-item w3-button">Work</a>
-    <a href="https://apexelegance.github.io/#sponsor" class="w3-bar-item w3-button">Sponsor</a>
-    <a href="https://apexelegance.github.io/#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="https://apexelegance.github.io/#" class="w3-bar-item w3-button">Search</a>
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
   </div>
 </div>
+    
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64" id="work">
 
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="w3-display-container w3-center">
-    <img src="https://raw.githubusercontent.com/apexelegance/apexelegance.github.io/main/Photo/Thomas.JPG" style="width:50%">
+<div class="w3-half w3-center">
+<img src="https://raw.githubusercontent.com/apexelegance/apexelegance.github.io/main/Photo/Thomas.jpg" style="width:50%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Thomas</h3>
       <p><b>Design Engineer</b></p>   
     </div>
-  </div>
-  
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+</div>
+
+ <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-half" id="Introduction">
     <h2 class="w3-wide">Thomas</h2>
     <p class="w3-opacity"><i>Design Engineer</i></p>
-    <p class="w3-justify">Hello everyone, I am Thomas.</p>
+    <p class="w3-justify">Hello everyone! I am Thomas.</p>
+  </div>
+
+</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
@@ -82,37 +90,26 @@ body {font-family: "Lato", sans-serif}
 </footer>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else { 
     x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
   }
 }
 </script>
