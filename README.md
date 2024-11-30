@@ -5,5 +5,4 @@
 Simple, Complex, Elegance <br>
 #f1inschoolshkmo <br>
 #f1inschoolshq <br>
-<img src="https://raw.githubusercontent.com/apexelegance/apexelegance.github.io/main/Photo/Back.jpg" alt="Photo" style="width:100%">
 <h3><center><a href="https://apexeleganceteam.com/" target="_blank">Here!</a></center></h3>
