@@ -5,5 +5,5 @@
 Simple, Complex, Elegance <br>
 #f1inschoolshkmo <br>
 #f1inschoolshq <be>
-<center>We have a new website! Please visit it by the link!</center>
+<center>We have a new website! Please visit it by the link!</center><br>
 <center><a href="https://apexeleganceteam.com/" target="_blank">Here!</a></center>
