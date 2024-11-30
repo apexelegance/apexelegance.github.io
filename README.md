@@ -5,4 +5,4 @@
 Simple, Complex, Elegance <br>
 #f1inschoolshkmo <br>
 #f1inschoolshq <br>
-<h3><center><a href="https://apexeleganceteam.com/" target="_blank">Here!</a></center></h3>
+<center><h3><a href="https://apexeleganceteam.com/" target="_blank">Here!</a></h3></center>
